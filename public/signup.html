@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+    <body class="bg-light vh-100 text-center d-flex align-items-center justify-content-center">
+
+        <main class="form-signin w-100" style="max-width: 330px;">
+            <form id="login-form" action="./home.html" novalidate>
+                <label class="mb-4"><a href="https://bitrupt.co/" class="custom-logo-link transparent-custom-logo" rel="home" itemprop="url"><img width="40" height="44" src="https://bitrupt.co/wp-content/uploads/2020/02/BITRUPTdone-2-60x64.png" class="custom-logo" alt="Bitrupt" loading="lazy" srcset="https://bitrupt.co/wp-content/uploads/2020/02/BITRUPTdone-2-60x64.png 60w, https://bitrupt.co/wp-content/uploads/2020/02/BITRUPTdone-2-282x300.png 282w, https://bitrupt.co/wp-content/uploads/2020/02/BITRUPTdone-2.png 536w" sizes="(max-width: 60px) 100vw, 60px"></a></label>
+                <br>
+                <div class="d-flex flex-row align-items-center justify-content-between mb-3">
+                <label>Full Name</label>
+                <input class="w-50" id="name" type="text" placeholder="Your name">
+            </div>
+            <div class="d-flex flex-row align-items-center justify-content-between mb-3">
+                <label>Email</label>
+                <input class="w-50" id="email" type="email" name="email" placeholder="Your email">
+            </div>
+            <div class="d-flex flex-row align-items-center justify-content-between mb-3">
+                <label>Contact</label>
+                <input class="w-50" id="contact" type="contact"  placeholder="Contact">
+                </select>                            
+            </div>
+            <div class="d-flex flex-row align-items-center justify-content-between mb-3">
+                <label>Address</label>
+                <input class="w-50" id="address" name="address" type="text" placeholder="Address">
+            </div>
+            <div class="d-flex flex-row align-items-center justify-content-between mb-3">
+                <label>Password</label>
+                <input class="w-50" id="password" name="password" type="password" placeholder="Password">
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-between mb-3">
+                <label>Confirm Password</label>
+                <input class="w-50" id="cpassword" name="cpassword" type="password" placeholder="Confirm Password">
+            </div>
+
+               <br>
+               <br>
+            
+               
+                <label class="w-100 btn btn-lg btn-dark" type="submit" id="sign_up_btn">Sign up</label>              
+                <div id="error" class="alert alert-danger mt-4 d-none" role="addError"></div>
+            </form>
+    </form>
+
+    <script src="./signup.js" type="module" ></script>
+</body>
+</html>

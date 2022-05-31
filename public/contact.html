@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitrupt Trainee</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <!-- FONT-AWESOME -->
+    <script src="https://kit.fontawesome.com/35b16fa9ce.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <div class="fluid-container d-flex flex-row">
+            <nav class="vh-100 px-lg-5 navbar navbar-dark bg-dark text-light fs-5 px-2">
+              <ul class="navbar-nav h-100 text-center w-100">
+                <li class="nav-item">
+                  <a class="nav-link" href="./home.html">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span class="d-none d-lg-inline">Home</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="d-none d-lg-inline">Profile</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="d-none d-lg-inline">About</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./contact.html">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="d-none d-lg-inline">Contact</span>
+                  </a>
+                </li>
+                <li class="nav-item mt-auto">
+                  <a class="nav-link" href="./index.html" style="width: max-content;">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span class="d-none d-lg-inline">Log Out</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+          <div class="d-flex flex-column w-100">
+            <div class="fluid-container bg-light mb-5">
+              <header class="container d-flex flex-wrap align-items-center justify-content-between justify-md-content-between py-3 mb-4 border-bottom">
+                  <label class="bi me-2"><a href="https://bitrupt.co/" class="custom-logo-link transparent-custom-logo" rel="home" itemprop="url"><img width="40" height="44" src="https://bitrupt.co/wp-content/uploads/2020/02/BITRUPTdone-2-60x64.png" class="custom-logo" alt="Bitrupt" loading="lazy" srcset="https://bitrupt.co/wp-content/uploads/2020/02/BITRUPTdone-2-60x64.png 60w, https://bitrupt.co/wp-content/uploads/2020/02/BITRUPTdone-2-282x300.png 282w, https://bitrupt.co/wp-content/uploads/2020/02/BITRUPTdone-2.png 536w" sizes="(max-width: 60px) 100vw, 60px"></a></label>
+                  <div class="col w-auto text-end">
+                      <h1>My First Website by Bitrupt</h1>
+                  </div>
+              </header>
+            </div>
+            <div class="fluid-container">
+              <main class="p-5 gap-3 d-flex flex-column-reverse flex-md-row justify-content-stretch container-lg">
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h2 class="text-center mb-5">Contact Us</h2>
+                    <form  id="contact-form" novalidate>
+                        <div class="d-flex flex-row align-items-center justify-content-between mb-3">
+                            <label>Full Name</label>
+                            <input class="w-50" id="name" type="text" placeholder="Your name">
+                        </div>
+                        <div class="d-flex flex-row align-items-center justify-content-between mb-3">
+                            <label>Email</label>
+                            <input class="w-50" id="email" type="email" name="email" placeholder="Your email">
+                        </div>
+                        <div class="d-flex flex-row align-items-center justify-content-between mb-3">
+                            <label>Country</label>
+                            <select class="form-select w-50" id="country" name="country">
+                                <option selected>Pick your country</option>
+                                <option value="pakistan">Pakistan</option>
+                                <option value="usa">United States of America</option>
+                                <option value="uk">United Kingdom</option>
+                            </select>                            
+                        </div>
+                        <div class="d-flex flex-row align-items-center justify-content-between mb-3">
+                            <label>Subject</label>
+                            <input class="w-50" id="subject" name="subject" type="text" placeholder="Subject">
+                        </div>
+                        <div class="d-flex flex-column mb-3">
+                            <label>Your Message</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+                        <button class="btn btn-dark" type="submit">Submit</button>
+                        <div id="error" class="alert alert-danger mt-4 d-none" role="addError"></div>
+                    </form>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.672582223728!2d67.06811771447853!3d24.909147549440146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f5a70a8370f%3A0x71747af0780cf74f!2sBitrupt!5e0!3m2!1sen!2s!4v1652876147073!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </main>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    const form = document.getElementById("contact-form")
+    const errorDiv = document.getElementById('error')
+
+    function startsWithCapital(word){
+        return word.charAt(0) === word.charAt(0).toUpperCase()
+    }
+
+    function validateEmail(mail) 
+    {
+        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)
+    }
+
+    function addError(message) {
+        errorDiv.innerText = message
+        errorDiv.classList.remove('d-none')
+        setTimeout( function () {
+            errorDiv.classList.add('d-none')
+        }, 3000)
+    }
+
+    form.addEventListener('submit', function(e) {
+        
+        let allowSubmit = false;
+
+        // name
+        if (form['name'].value === '') {
+            addError("Name cannot be empty.")
+            e.preventDefault()
+            return
+        } else if (!startsWithCapital(form['name'].value)) {
+            addError("Name must start with capital letter")
+            e.preventDefault()
+            return
+        }
+
+        // email
+        if (form['email'].value === '') {
+            addError("Email cannot be empty.")
+            e.preventDefault()
+            return
+        } else if (!validateEmail(form['email'].value)) {
+            addError("Email must be valid.")
+            e.preventDefault()
+            return
+        }
+
+        // country
+        if (form['country'].value === '') {
+            addError("Country cannot be empty.")
+            e.preventDefault()
+            return
+        }
+        // subject
+        if (form['subject'].value === '') {
+            addError("Subject cannot be empty.")
+            e.preventDefault()
+            return
+        }
+        // message
+        if (form['message'].value === '') {
+            addError("Message cannot be empty.")
+            e.preventDefault()
+            return
+        }
+    })
+</script>
