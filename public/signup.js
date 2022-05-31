@@ -12,7 +12,7 @@ sign_up_btn.addEventListener("click", function ()
       console.log(password.value);
       createUserWithEmailAndPassword(auth, email.value, password.value)
       .then((userCredential) => {
-        // Signed in 
+        // Signed in //
         console.log("usercreated")
         const user = userCredential.user;
         set(ref(db,`users/${user.uid}`),{
