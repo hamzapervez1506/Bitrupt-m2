@@ -18,17 +18,20 @@ let login_btn = document.getElementById("login_btn");
 event.preventDefault();
     let login_email = document.getElementById("login_email");
     let login_password = document.getElementById("login_password");
+    
     let userLoggedIn = false;
+    
 
     console.log(login_email.value);
     console.log(login_password.value);
-   
+  
     signInWithEmailAndPassword(auth, login_email.value, login_password.value)
   .then((userCredential) => {
     const user = userCredential.user;
-    console.log(user);
+    console.log(user.uid);
     userLoggedIn = true;
     window.location.href = 'home.html';
+    localStorage.setItem('userId',user.uid);
   })
   .catch((error) => {
     const errorCode = error.code;

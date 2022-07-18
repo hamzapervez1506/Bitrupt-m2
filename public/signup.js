@@ -6,10 +6,20 @@ let sign_up_btn = document.getElementById("sign_up_btn");
 console.log(sign_up_btn) 
 sign_up_btn.addEventListener("click", function () 
   {
+   
       let email = document.getElementById("email");
       let password = document.getElementById("password");
-      console.log(email.value);
-      console.log(password.value);
+      let cpassword = document.getElementById("cpassword");
+      if (password.value !== cpassword.value) {
+        alert("Passwords do not match.");
+        return;
+      }
+      
+    console.log(email.value);
+    console.log(password.value);
+    console.log(cpassword.value);
+    
+      
       createUserWithEmailAndPassword(auth, email.value, password.value)
       .then((userCredential) => {
         // Signed in //
@@ -21,17 +31,31 @@ sign_up_btn.addEventListener("click", function ()
           contact:  contact.value,
           address: address.value,
         });
+
        
         // ...
         
         
       })
+      
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(errorMessage);
-        // ..
-        
+        console.log(error);
       });
-    
-  }   );
+        if(password.value.length==0)
+        {
+            alert('Please enter the password');
+            return false;
+        }
+        // ..
+      
+      function disableButton() {
+        var btn = document.getElementById('sign_up_btn');
+        btn.disabled = true;
+        btn.innerText = 'Loading'
+
+        // window.location.href = 'home.html';
+    }
+    disableButton()
+  });
